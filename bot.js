@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'mlgc') {
-    	message.reply('I made by Lord-sama');
+    if (message.content === 'samlekom') {
+    	message.reply('Komsalam mamanx');
   	}
 });
 
