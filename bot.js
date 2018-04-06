@@ -11,5 +11,6 @@ client.on('message', message => {
   	}
 });
 
+bot.user.setActivity('Fadhal.3gp');
 // Login token
 client.login(process.env.BOT_TOKEN);
