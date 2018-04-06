@@ -7,11 +7,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'samlekom') {
-    	message.reply('Komsalam mamanx');
+    	message.reply('Komsalam');
   	}
 });
 
-// Status
-bot.user.setGame('Fadal.3gp')
 // Login token
 client.login(process.env.BOT_TOKEN);
