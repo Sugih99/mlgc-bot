@@ -9,7 +9,13 @@ client.on('message', message => {
     if (message.content === 'samlekom') {
     	message.reply('Komsalam mamanx');
   	}
+client.on('message', message => {
+    if (message.content === 'lord') {
+    	message.reply('Praise the @Lord !');
+  	}
 });
 
-// THIS  MUST  BE  THIS  WAY
+// Status
+bot.user.setGame('Fadal.3gp')
+// Login token
 client.login(process.env.BOT_TOKEN);
