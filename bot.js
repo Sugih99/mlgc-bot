@@ -9,10 +9,6 @@ client.on('message', message => {
     if (message.content === 'samlekom') {
     	message.reply('Komsalam mamanx');
   	}
-client.on('message', message => {
-    if (message.content === 'lord') {
-    	message.reply('Praise the @Lord !');
-  	}
 });
 
 // Status
