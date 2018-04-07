@@ -1,12 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-bot.on('ready', () => {
-  bot.user.setGame('samlekom')
-});
-
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('I am ready!')
+    bot.user.setGame('samlekom');
 });
 
 client.on('message', message => {
