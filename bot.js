@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'samlekom') {
-    	message.reply('Komsalam');
+    	message.reply('komsalam mamank, jangan lupa bahagia ea.');
   	}
 });
 
