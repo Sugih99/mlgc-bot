@@ -25,7 +25,7 @@ client.on('message', msg => {
                 .setColor('#3D6C29')
                 .setTitle('Careful now..')
                 .setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png');
-                msg.channel.send(embed);
+                channel.send(embed);
         }
 });
 // Login token
