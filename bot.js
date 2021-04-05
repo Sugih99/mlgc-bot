@@ -14,6 +14,11 @@ client.on("ready", () =>{
 
 client.on('message', message => {
     if (message.content === '?meme') {
+            client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "?meme",  //The message shown
+            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
     message.reply('?phoenix');
       }
 });
