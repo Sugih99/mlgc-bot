@@ -21,11 +21,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
         if(msg.content == '?phoenix') {
-                const embed = new Discord.MessageEmbed()
-                .setColor('#3D6C29')
-                .setTitle('Careful now..')
-                .setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png');
-                channel.send(embed);
+        message.channel.send("Careful now..", {files: ["https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png"]});
         }
 });
 // Login token
