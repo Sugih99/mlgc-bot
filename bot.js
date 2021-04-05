@@ -3,10 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () =>{
     console.log('Logged in');
-    client.user.setActivity("Playing Minecraft", {
-    type: "STREAMING",
-    url: "https://www.twitch.tv/lordgrin_"
-    });
  });
 
 client.on('message', message => {
