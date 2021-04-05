@@ -32,7 +32,7 @@ client.on('message', message => {
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-        message.channel.send(exampleEmbed);
+        channel.send(exampleEmbed);
       }
 });
 
