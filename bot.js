@@ -3,18 +3,14 @@ const client = new Discord.Client();
 
 client.on('ready', () =>{
     console.log('Logged in');
-    client.user.setPresence({
-        status: 'online',  //You can show online, idle....
-        activity: {
-            name: '?meme',  //The message shown
-            type: 'PLAYING' //PLAYING: WATCHING: LISTENING: STREAMING:
-        }
+    client.user.setActivity("Playing Minecraft", {
+    type: "STREAMING",
+    url: "https://www.twitch.tv/lordgrin_"
     });
  });
 
 client.on('message', message => {
     if (message.content === '?meme') {
-    client.user.setStatus('online', 'type ?meme') 
     message.channel.send('**Available insider meme command:**\n?phoenix');
       }
 });
