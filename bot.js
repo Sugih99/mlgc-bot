@@ -33,7 +33,7 @@ client.on('message', message => {
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
         message.reply('komsalam');
-        channel.send(exampleEmbed);
+        message.channel.send(exampleEmbed);
       }
 });
 
