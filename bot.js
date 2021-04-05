@@ -13,6 +13,15 @@ client.on('ready', () => {
 
 });
 
+client.on('message', msg => {
+        if(msg.content == '?phoenix'){
+                .setColor('#3D6C29')
+                .setTitle('Careful now..')
+                .setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png')
+                msg.channel.send(embed)
+        }
+}
+
 client.on('message', message => {
     if (message.content === 'samlekom') {
     	message.reply('komsalam');
