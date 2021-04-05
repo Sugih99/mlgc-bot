@@ -21,12 +21,6 @@ client.on('message', msg => {
                 msg.channel.send(embed)
         }
 }
-
-client.on('message', message => {
-    if (message.content === 'samlekom') {
-    	message.reply('komsalam');
-  	}
-});
-
+)
 // Login token
 client.login(process.env.BOT_TOKEN);
