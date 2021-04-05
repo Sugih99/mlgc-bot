@@ -21,6 +21,7 @@ client.on('message', msg => {
                 .setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png')
                 msg.channel.send(embed)
         }
-});
+}
+)
 // Login token
 client.login(process.env.BOT_TOKEN);
