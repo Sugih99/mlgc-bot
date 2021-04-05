@@ -14,6 +14,7 @@ client.on('ready', () =>{
 
 client.on('message', message => {
     if (message.content === '?meme') {
+    client.user.setStatus('online', 'type ?meme') 
     message.channel.send('**Available insider meme command:**\n?phoenix');
       }
 });
