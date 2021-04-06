@@ -6,7 +6,7 @@ client.on('ready', () =>{
     console.log('Logged in');
     client.user.setPresence({
         status: "online",  //You can show online, idle....
-        game: {
+        activity: {
             name: "?meme",  //The message shown
             type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
