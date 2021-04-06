@@ -40,16 +40,16 @@ client.on('message', mesage => {
 	//.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
 	.setDescription('JOKES OVAH, YOUR DAD')
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
-	/*.addFields(
-		{ name: 'Regular field title', value: 'Some value here' },
-		{ name: '\u200B', value: '\u200B' },
+	.addFields(
+		{ name: 'Cosplayer', value: 'Hengky' },
+		/*{ name: '\u200B', value: '\u200B' },
 		{ name: 'Inline field title', value: 'Some value here', inline: true },
 		{ name: 'Inline field title', value: 'Some value here', inline: true },
 	)
 	.addField('Inline field title', 'Some value here', true)*/
 	.setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png')
 	.setTimestamp()
-	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/451387123086393345/470913870400061440/MLGC_3.png');
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
 });
