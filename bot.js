@@ -35,21 +35,21 @@ client.on('message', mesage => {
   if (mesage.content === '?secret') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle('Some title')
-	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addFields(
+	.setTitle('Phoenix Cosplay')
+	//.setURL('https://discord.js.org/')
+	//.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('JOKES OVAH, YOUR DAD')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	/*.addFields(
 		{ name: 'Regular field title', value: 'Some value here' },
 		{ name: '\u200B', value: '\u200B' },
 		{ name: 'Inline field title', value: 'Some value here', inline: true },
 		{ name: 'Inline field title', value: 'Some value here', inline: true },
 	)
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.addField('Inline field title', 'Some value here', true)*/
+	.setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png')
 	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/451387123086393345/470913870400061440/MLGC_3.png');
     mesage.channel.send(embed);
   }
 });
