@@ -20,34 +20,50 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-        if(msg.content == '?phoenix') {
+        if(msg.content == '?legacy1') {
         msg.channel.send("Careful now..", {files: ["https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png"]});
         }
-        if(msg.content == '?revive') {
+        if(msg.content == '?legacy2') {
         msg.channel.send("YOUR DUDI IS NOT OVAH", {files: ["https://media.discordapp.net/attachments/294422759172472833/827175958737846312/wimllykung.png"]});
         }
-        if(msg.content == '?kaori') {
+        if(msg.content == '?legacy3') {
         msg.channel.send("kyaaa booedi-kung >////<", {files: ["https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg"]});
         }    
 });
 
 client.on('message', mesage => {
-  if (mesage.content === '?secret') {
+  if (mesage.content === '?phoenix') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Phoenix Cosplay')
-	//.setURL('https://discord.js.org/')
-	//.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
 	.setDescription('JOKES OVAH, YOUR DAD')
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
-	/*.addFields(
-		{ name: 'Cosplayer', value: 'Hengky' },
-		{ name: '\u200B', value: '\u200B' },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-	)*/
 	.addField('Cosplayer', 'Hengky', true)
 	.setImage('https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '?revive') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Sage Cosplay')
+	.setDescription('YOU WILL NOT KILL MY ALAY')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Willy', true)
+	.setImage('https://media.discordapp.net/attachments/294422759172472833/827175958737846312/wimllykung.png')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '?kaori') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Kaori Cosplay')
+	.setDescription('kyaaa booedi-kung >////<')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Tito', true)
+	.setImage('https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg')
 	.setTimestamp()
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
