@@ -15,6 +15,9 @@ client.on('message', msg => {
         if(msg.content == '?phoenix') {
         msg.channel.send("Careful now..", {files: ["https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png"]});
         }
+        if(msg.content == '?revive') {
+        msg.channel.send("YOUR DUDI IS NOT OVAH", {files: ["https://media.discordapp.net/attachments/294422759172472833/827175958737846312/wimllykung.png"]});
+        }
 });
 // Login token
 client.login(process.env.BOT_TOKEN);
