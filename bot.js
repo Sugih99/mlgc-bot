@@ -8,7 +8,7 @@ client.on('ready', () =>{
         status: "online",  //You can show online, idle....
         activity: {
             name: "?meme",  //The message shown
-            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
