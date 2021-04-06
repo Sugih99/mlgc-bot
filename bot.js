@@ -22,5 +22,16 @@ client.on('message', msg => {
         msg.channel.send("kyaaa booedi-kung >////<", {files: ["https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg"]});
         }    
 });
+
+client.on('message', mesage => {
+  // If the message is "how to embed"
+  if (mesage.content === '!embed') {
+    const embed = new MessageEmbed()
+      .setTitle('A slick little embed')
+      .setColor(0xff0000)
+      .setDescription('Hello, this is a slick embed!');
+    mesage.channel.send(embed);
+  }
+});
 // Login token
 client.login(process.env.BOT_TOKEN);
