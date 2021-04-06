@@ -32,12 +32,24 @@ client.on('message', msg => {
 });
 
 client.on('message', mesage => {
-  // If the message is "how to embed"
-  if (mesage.content === '!embed') {
+  if (mesage.content === '?secret') {
     const embed = new MessageEmbed()
-      .setTitle('A slick little embed')
-      .setColor(0xff0000)
-      .setDescription('Hello, this is a slick embed!');
+	.setColor('#0099ff')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
     mesage.channel.send(embed);
   }
 });
