@@ -15,7 +15,7 @@ client.on('ready', () =>{
 
 client.on('message', message => {
     if (message.content === '?meme') {
-    message.channel.send('**Available insider meme command:**\n**?phoenix** - Cosplay phoenix\n**?revive** - Cosplay sage\n**?kaori** - Cosplay mayat mokad\n**?brim** - Cosplay jendral Brimstone');
+    message.channel.send('**Available insider meme command:**\n**?phoenix** - Cosplay phoenix\n**?revive** - Cosplay sage\n**?kaori** - Cosplay mayat mokad\n**?brim** - Cosplay jendral Brimstone\n**?jujutsu** - Itadori Yuji cosplay');
       }
 });
 
@@ -76,6 +76,18 @@ client.on('message', mesage => {
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
 	.addField('Cosplayer', 'Arya', true)
 	.setImage('https://cdn.discordapp.com/attachments/294456349868425217/829273865736945704/londog.jpg')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '?jujutsu') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Yuji Itadori Cosplay')
+	.setDescription('Jujutsu Kaisen')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Dimas', true)
+	.setImage('https://cdn.discordapp.com/attachments/294456349868425217/829306148682465390/itadori.jpg')
 	.setTimestamp()
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
