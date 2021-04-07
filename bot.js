@@ -15,7 +15,7 @@ client.on('ready', () =>{
 
 client.on('message', message => {
     if (message.content === '?meme') {
-    message.channel.send('**Available insider meme command:**\n**?phoenix** - Cosplay phoenix\n**?revive** - Cosplay sage\n**?kaori** - Cosplay mayat mokad');
+    message.channel.send('**Available insider meme command:**\n**?phoenix** - Cosplay phoenix\n**?revive** - Cosplay sage\n**?kaori** - Cosplay mayat mokad\n**?brim** - Cosplay jendral Brimstone');
       }
 });
 
@@ -64,6 +64,18 @@ client.on('message', mesage => {
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
 	.addField('Cosplayer', 'Tito', true)
 	.setImage('https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '?brim') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Brimstone Cosplay')
+	.setDescription('they think ihwan londog')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Arya', true)
+	.setImage('https://cdn.discordapp.com/attachments/294456349868425217/829273865736945704/londog.jpg')
 	.setTimestamp()
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
