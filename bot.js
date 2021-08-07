@@ -7,32 +7,32 @@ client.on('ready', () =>{
     client.user.setPresence({
         status: "online",  //You can show online, idle....
         activity: {
-            name: "?meme",  //The message shown
+            name: "!meme",  //The message shown
             type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
 
 client.on('message', message => {
-    if (message.content === '?meme') {
-    message.channel.send('**Available insider meme command:**\n**?phoenix** - Cosplay phoenix\n**?revive** - Cosplay sage\n**?kaori** - Cosplay mayat mokad\n**?brim** - Cosplay jendral Brimstone\n**?jujutsu** - Itadori Yuji cosplay');
+    if (message.content === '!meme') {
+    message.channel.send('**Available insider meme command:**\n**!phoenix** - Cosplay phoenix\n**!revive** - Cosplay sage\n**!kaori** - Cosplay mayat mokad\n**!brim** - Cosplay jendral Brimstone\n**!jujutsu** - Itadori Yuji cosplay\n**!mikey - Cosplay kang tawuran aka Sano Manjiro');
       }
 });
 
 client.on('message', msg => {
-        if(msg.content == '?legacy1') {
+        if(msg.content == '!legacy1') {
         msg.channel.send("Careful now..", {files: ["https://media.discordapp.net/attachments/294422759172472833/827183156859109406/hengky2.png"]});
         }
-        if(msg.content == '?legacy2') {
+        if(msg.content == '!legacy2') {
         msg.channel.send("YOUR DUDI IS NOT OVAH", {files: ["https://media.discordapp.net/attachments/294422759172472833/827175958737846312/wimllykung.png"]});
         }
-        if(msg.content == '?legacy3') {
+        if(msg.content == '!legacy3') {
         msg.channel.send("kyaaa booedi-kung >////<", {files: ["https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg"]});
         }    
 });
 
 client.on('message', mesage => {
-  if (mesage.content === '?phoenix') {
+  if (mesage.content === '!phoenix') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Phoenix Cosplay')
@@ -44,7 +44,7 @@ client.on('message', mesage => {
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
-  if (mesage.content === '?revive') {
+  if (mesage.content === '!revive') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Sage Cosplay')
@@ -56,7 +56,7 @@ client.on('message', mesage => {
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
-  if (mesage.content === '?kaori') {
+  if (mesage.content === '!kaori') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Kaori Cosplay')
@@ -68,7 +68,7 @@ client.on('message', mesage => {
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
-  if (mesage.content === '?brim') {
+  if (mesage.content === '!brim') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Brimstone Cosplay')
@@ -80,7 +80,7 @@ client.on('message', mesage => {
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
-  if (mesage.content === '?jujutsu') {
+  if (mesage.content === '!jujutsu') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Yuji Itadori Cosplay')
@@ -88,6 +88,18 @@ client.on('message', mesage => {
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
 	.addField('Cosplayer', 'Dimas', true)
 	.setImage('https://cdn.discordapp.com/attachments/294456349868425217/829306148682465390/itadori.jpg')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '!mikey') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Sano Manjiro (Mikey) Cosplay')
+	.setDescription('Ospek tidak perlu, brawl nomer 1')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Arya', true)
+	.setImage('https://cdn.discordapp.com/attachments/294422759172472833/873612363633393735/Sano_Wanjiro.png')
 	.setTimestamp()
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
