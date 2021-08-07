@@ -92,7 +92,7 @@ client.on('message', mesage => {
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
   }
-  if (mesage.contente === '!mikey') {
+  if (mesage.content === '!mikey') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Sano Manjiro (Mikey) Cosplay')
