@@ -15,7 +15,7 @@ client.on('ready', () =>{
 
 client.on('message', message => {
     if (message.content === '!meme') {
-    message.channel.send('**Available insider meme command:**\n**!phoenix** - Cosplay phoenix\n**!revive** - Cosplay sage\n**!kaori** - Cosplay mayat mokad\n**!brim** - Cosplay jendral Brimstone\n**!jujutsu** - Itadori Yuji cosplay\n**!mikey** - Cosplay kang tawuran aka Sano Manjiro');
+    message.channel.send('**Available insider meme command:**\n**!phoenix** - Cosplay phoenix\n**!revive** - Cosplay sage\n**!kaori** - Cosplay mayat mokad\n**!brim** - Cosplay jendral Brimstone\n**!jujutsu** - Itadori Yuji cosplay\n**!mikey** - Cosplay kang tawuran aka Sano Manjiro\n**!paladin** - Cosplay power armor');
       }
 });
 
@@ -100,6 +100,18 @@ client.on('message', mesage => {
 	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
 	.addField('Cosplayer', 'Arya', true)
 	.setImage('https://cdn.discordapp.com/attachments/294422759172472833/873612363633393735/Sano_Wanjiro.png')
+	.setTimestamp()
+	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
+    mesage.channel.send(embed);
+  }
+  if (mesage.content === '!paladin') {
+    const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Paladin Ihwan')
+	.setDescription('Diduga memakai power armor saat ospek')
+	.setThumbnail('https://cdn.discordapp.com/attachments/451387123086393345/775336937749217280/MLGC2.gif')
+	.addField('Cosplayer', 'Arya', true)
+	.setImage('https://cdn.discordapp.com/attachments/862699908121493514/882746416366247946/WipeOut58_02_2021_045849.436000.jpg')
 	.setTimestamp()
 	.setFooter('Made by GriN#8590', 'https://cdn.discordapp.com/attachments/428190130390695936/828960606841339915/MLGC_Comunnity.jpg');
     mesage.channel.send(embed);
