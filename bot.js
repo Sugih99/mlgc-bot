@@ -1,14 +1,15 @@
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = "!";
 
 client.on('ready', () =>{
     console.log('Logged in');
     client.user.setPresence({
-        status: "online",  //You can show online, idle....
+        status: "online",  
         activity: {
-            name: "!meme",  //The message shown
-            type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            name: "!meme",  
+            type: "LISTENING" 
         }
     });
  });
@@ -29,6 +30,35 @@ client.on('message', msg => {
         if(msg.content == '!legacy3') {
         msg.channel.send("kyaaa booedi-kung >////<", {files: ["https://media.discordapp.net/attachments/294422759172472833/524440748863651860/IMG_20181218_111727.jpg"]});
         }    
+});
+
+client.on("message", message => {
+	if (message.content.startsWith(prefix + "curse")) {
+
+    var muteRole = msg.guild.roles.find(role => role.name.toLowerCase().includes("Cursed"));
+    var muteChannel = msg.guild.channels.find(channel => channel.name.includes("『💬』chat"));
+    var muteUser = msg.mentions.members.first();
+    var muteReason = msg.content.slice(prefix.length + 27);
+    
+    if (!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send("Only the lord may use this command. Sad ihwan.");
+    if (!muteUser) return msg.channel.send("You have to mention a valid member");
+    if (!muteChannel) return msg.channel.send("There was an error executing the command, please contact Admins.");
+    if (!muteRole) return msg.channel.send("Mute role does not exist");
+    if (!msg.guild.member(client.user.id).hasPermission("MANAGE_ROLES")) return msg.channel.send("I have no power to do that, please recharge the battery.");
+    if (!muteReason) muteReason = "No reason given";
+    
+    // makna dari bot discord tersebut adalah jika anda melihat tulisan ini maka anda adalah anak anjing :v
+    var muteEmbed = new Discord.RichEmbed() 
+    .setTitle("Lord Curse")
+    .addField("Cursed user", muteUser)
+    .addField("Reason", muteReason)
+    .setFooter(`Cursed by ${msg.author.tag}`)
+    .setTimestamp();
+    
+    muteUser.addRole(muteRole);
+    //msg.channel.send(`${muteUser} has been cursed`);
+    muteChannel.send(muteEmbed);
+    }
 });
 
 client.on('message', mesage => {
@@ -117,5 +147,4 @@ client.on('message', mesage => {
     mesage.channel.send(embed);
   }
 });
-// Login token
 client.login(process.env.BOT_TOKEN);
