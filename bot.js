@@ -36,7 +36,7 @@ client.on("message", message => {
 	if (message.content.startsWith(prefix + "curse")) {
 
     var muteRole = msg.guild.roles.find(role => role.name.toLowerCase().includes("Cursed"));
-    var muteChannel = msg.guild.channels.find(channel => channel.name.includes("『💬』chat"));
+    var muteChannel = msg.guild.channels.find(channel => channel.name.includes("staff-chat"));
     var muteUser = msg.mentions.members.first();
     var muteReason = msg.content.slice(prefix.length + 27);
     
@@ -56,7 +56,7 @@ client.on("message", message => {
     .setTimestamp();
     
     muteUser.addRole(muteRole);
-    //msg.channel.send(`${muteUser} has been cursed`);
+    msg.channel.send(`${muteUser} has been cursed`);
     muteChannel.send(muteEmbed);
     }
 });
