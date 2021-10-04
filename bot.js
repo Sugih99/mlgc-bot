@@ -32,11 +32,11 @@ client.on('message', msg => {
         }    
 });
 
-/*client.on("message", message => {
-	if (message.content.startsWith(prefix + "curse")) {
+client.on('message', message => {
+	if (message.content.startsWith(prefix + 'curse')) {
 
     var muteRole = msg.guild.roles.find(role => role.name.toLowerCase().includes("Cursed"));
-    var muteChannel = msg.guild.channels.find(channel => channel.name.includes("staff-chat"));
+    var muteChannel = msg.guild.channels.find(channel => channel.name.includes("『💬』chat"));
     var muteUser = msg.mentions.members.first();
     var muteReason = msg.content.slice(prefix.length + 27);
     
@@ -60,7 +60,7 @@ client.on('message', msg => {
     muteChannel.send(muteEmbed);
     }
 });
-*/
+
 client.on('message', mesage => {
   if (mesage.content === '!phoenix') {
     const embed = new MessageEmbed()
