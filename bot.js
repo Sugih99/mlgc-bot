@@ -7,8 +7,8 @@ client.on('ready', () =>{
     client.user.setPresence({
         status: "online",  
         activity: {
-            name: "Dewi twerking",  
-            type: "WATCHING" 
+            name: "!meme",  
+            type: "LISTENING" 
         }
     });
  });
