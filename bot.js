@@ -32,15 +32,15 @@ client.on('message', msg => {
         }    
 });
 
-client.on('message', message => {
-	if (message.content.startsWith(prefix + 'curse')) {
+client.on('message', mesage => {
+	if (mesage.content.startsWith(prefix + 'curse')) {
 
     var muteRole = msg.guild.roles.find(role => role.name.toLowerCase().includes("Cursed"));
     var muteChannel = msg.guild.channels.find(channel => channel.name.includes("『💬』chat"));
     var muteUser = msg.mentions.members.first();
     var muteReason = msg.content.slice(prefix.length + 27);
     
-    if (!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send("Only the lord may use this command. Sad ihwan.");
+    if (!msg.member.hasPermission("MANAGE_MESSAGES")) return msg.channel.send("Only the lord may use this command. Sad ihwan.");
     if (!muteUser) return msg.channel.send("You have to mention a valid member");
     if (!muteChannel) return msg.channel.send("There was an error executing the command, please contact Admins.");
     if (!muteRole) return msg.channel.send("Mute role does not exist");
@@ -60,7 +60,6 @@ client.on('message', message => {
     muteChannel.send(muteEmbed);
     }
 });
-
 client.on('message', mesage => {
   if (mesage.content === '!phoenix') {
     const embed = new MessageEmbed()
